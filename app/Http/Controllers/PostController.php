@@ -12,7 +12,12 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::get();
+
+        return response()->json([
+            'message'=>'List of posts',
+            'posts'=>$posts
+        ]);
     }
 
     /**
