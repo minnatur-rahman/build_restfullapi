@@ -17,7 +17,7 @@ class PostController extends Controller
         return response()->json([
             'message'=>'List of posts',
             'posts'=>$posts
-        ]);
+        ], 200);
     }
 
     /**
