@@ -8,3 +8,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('v1/posts',[PostController::class, 'index']);
+Route::post('v1/posts',[PostController::class, 'store']);

@@ -41,7 +41,10 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return response()->json([
+            'message'=>'New post created',
+            'post'=>$post
+        ], 200);
     }
 
     /**
