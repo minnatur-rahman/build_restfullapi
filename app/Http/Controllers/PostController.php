@@ -42,7 +42,7 @@ class PostController extends Controller
     public function show(Post $post)
     {
         return response()->json([
-            'message'=>'New post created',
+            'message'=>'Single Post',
             'post'=>$post
         ], 200);
     }
